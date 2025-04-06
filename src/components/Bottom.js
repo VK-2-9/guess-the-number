@@ -8,6 +8,7 @@ function Bottom(props) {
 
       const [input,setinput]=useState("")
       const [diff,setdiff]=useState("")
+      const[count,setcount]=useState(5)
       const [result,setresult]=useState(false)
 
       const handleinput=(e)=>{
@@ -25,7 +26,8 @@ function Bottom(props) {
           }
           else{
               console.log("no")
-              setresult(false) 
+              setresult(false)
+              setcount(count-1) 
               console.log(props.random)
               if(input>props.random){
                 setdiff("Lesser ")
@@ -43,7 +45,7 @@ function Bottom(props) {
     <div className="bottom">
       <Left random={props.random} input={input} handleinput={handleinput} check={check} />
 
-      <Right diff={diff} result={result}/>
+      <Right diff={diff} result={result} count={count}/>
     </div>
   );
 }
