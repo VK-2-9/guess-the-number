@@ -1,0 +1,108 @@
+*{
+    font-family: "Workbench", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+   
+    background-color: black;
+    color: white;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.header button{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.header button:hover{
+    color: white;
+    background-color: black;
+    border: white solid 2px;
+    transition-duration: 0.3s;
+
+}
+
+.header h1{
+    font-size: 60px;
+    margin-top: 6rem;
+}
+.header p{
+    font-size: 20px;
+    
+}
+ hr{
+    border-color: white;
+    background-color: white;
+    height: 8px;
+    margin-top: 5rem;
+}
+
+/*bottom*/
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    margin-top: 7rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.left button{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    width: 10rem;
+}
+.left button:hover{
+    color: white;
+    background-color: black;
+    border: white solid 2px;
+    transition-duration: 0.3s;
+
+}
+
+.left input{
+    height: 5rem;
+    width: 10rem;
+    color: white;
+    background-color: black;
+    font-size:3rem;
+    padding: 10px;
+    border: solid white 3px;
+    
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.right h1{
+    font-size: 60px;
+}   
+
+.right p{
+    font-size: 30px;
+}
